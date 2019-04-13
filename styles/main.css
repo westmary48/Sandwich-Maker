@@ -1,3 +1,8 @@
 body {
     background-color: aqua;
 }
+
+.breadImg {
+    height: 200px;
+    width: 200px;
+}
