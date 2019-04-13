@@ -1,29 +1,40 @@
 import bread from '../helpers/bread.js';
 import util from '../helpers/util.js';
 
+const addToCartEvent = (e) => {
+    e.preventDefault();
+    const breadInfo = bread.getBread();
+    console.log(breadInfo);
 
- const makeStore = () => {
+  }
+
+ const makeStore = (e) => {
+    //  const button = e.target.id
     const breadInfo = bread.getBread();
     let domString = '<h2>Bread</h2>';
-    domString += `<h3>${breadInfo.asiago.name}</h3>`
-    domString += `<h3> $ ${breadInfo.asiago.price} .00 </h3>`
-    domString += `<img class = "breadImg" src = "${breadInfo.asiago.imageUrl}">`
-    domString += `<button class = "btn btn-danger ${breadInfo.asiago.breadClassBtn} ">Add Asiago</button>`
-    domString += `<h3>${breadInfo.wheat.name}</h3>`
-    domString += `<h3> $ ${breadInfo.wheat.price} </h3>`
-    domString += `<img class = "breadImg" src = "${breadInfo.wheat.imageUrl}">`
-    domString += `<button class = "btn btn-danger ${breadInfo.wheat.breadClassBtn} ">Add Wheat</button>`
-    domString += `<h3>${breadInfo.white.name}</h3>`
-    domString += `<h3> $ ${breadInfo.white.price}</h3>`
-    domString += `<img class = "breadImg" src = "${breadInfo.white.imageUrl}">`
-    domString += `<button class = "btn btn-danger ${breadInfo.white.breadClassBtn} ">Add White</button>`
-    domString += `<h3>${breadInfo.pita.name}</h3>`
-    domString += `<h3> $ ${breadInfo.pita.price}</h3>`
-    domString += `<img class = "breadImg" src= "${breadInfo.pita.imageUrl}">`
-    domString += `<button class = "btn btn-danger ${breadInfo.pita.breadClassBtn} ">Add Pita</button>`
+//     if (button === 'whiteBtn') {
+//         console.log('clicked on white');
+//         // addToCartEvent();
+//     } else if (button === 'wheatBtn') {
+//         console.log('clicked on wheat');
+//         // addToCartEvent();
+//     } else if (button === 'whiteBtn'){
+//         console.log('clicked on white');
+//         // addToCartEvent();
+//     } else if  (button === 'pitBtn') {
+//         console.log('clicked on pita');
+//         // addToCartEvent();
+// }
+    breadInfo.forEach((bread) => {
+    domString += `<h3>${bread.name}</h3>`
+    domString += `<h3> $ ${bread.price} </h3>`
+    domString += `<img class = "breadImg" src = "${bread.imageUrl}">`
+    domString += `<button id = "breadInfo.id" class = "btn btn-danger ${bread.id} ">Add Asiago</button>`
     domString += `</div>`
-
     util.printToDom('bread-container', domString);
+    document.getElementById(`${bread.id}`).addEventListener('click', addToCartEvent);
+
+    })
 
  };
 
