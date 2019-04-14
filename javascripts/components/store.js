@@ -8,36 +8,21 @@ const addToCartEvent = (e) => {
 
   }
 
- const makeStore = (e) => {
-    //  const button = e.target.id
+ const makeStore = () => {
     const breadInfo = bread.getBread();
     let domString = '<h2>Bread</h2>';
-//     if (button === 'whiteBtn') {
-//         console.log('clicked on white');
-//         // addToCartEvent();
-//     } else if (button === 'wheatBtn') {
-//         console.log('clicked on wheat');
-//         // addToCartEvent();
-//     } else if (button === 'whiteBtn'){
-//         console.log('clicked on white');
-//         // addToCartEvent();
-//     } else if  (button === 'pitBtn') {
-//         console.log('clicked on pita');
-//         // addToCartEvent();
-// }
-    breadInfo.forEach((bread) => {
-    domString += `<h3>${bread.name}</h3>`
-    domString += `<h3> $ ${bread.price} </h3>`
-    domString += `<img class = "breadImg" src = "${bread.imageUrl}">`
-    domString += `<button id = "breadInfo.id" class = "btn btn-danger ${bread.id} ">Add Asiago</button>`
+    domString += `<h3> $ ${breadInfo.asiago}</h3>`
+    domString += `<h3> $ ${breadInfo.wheat} </h3>`
+    domString += `<h3> $ ${breadInfo.white} </h3>`
+    domString += `<h3> $ ${breadInfo.pita} </h3>`
+    domString += `<button id = "cart-btn" class = "btn btn-danger ">Add To Cart</button>`
     domString += `</div>`
-    util.printToDom('bread-container', domString);
-    document.getElementById(`${bread.id}`).addEventListener('click', addToCartEvent);
 
-    })
+    util.printToDom('bread-container', domString);
+    document.getElementById('cart-btn').addEventListener('click', addToCartEvent);
 
  };
 
- export default { makeStore }
+ export default { makeStore, addToCartEvent }
 
 
