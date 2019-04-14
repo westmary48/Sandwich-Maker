@@ -9,4 +9,8 @@ const breadInfo = {
 return breadInfo;
 }
 
+const addBread = () => {
+
+}
+
  export default { getBread };
