@@ -11,7 +11,10 @@ This application allows its users to select ingredients from the menu by selecti
 - CSS
 
 ## Getting Started
-[$ git clone](git@github.com:westmary48/Sandwich-Maker.git)
+```
+ $git clone https://github.com/westmary48/Sandwich-Maker
+
+```
 
 
 ## Screenshot
@@ -19,8 +22,6 @@ This application allows its users to select ingredients from the menu by selecti
 
 
 ## Prerequisites
-
--  [Go to:](https://www.npmjs.com/package/http-server)
 - Install "http-server"
 - Navigate to the project folder in command line - interface and type: http-server -p 8080
 - [This will show as:](http://localhost:8080 "in google chrome")
