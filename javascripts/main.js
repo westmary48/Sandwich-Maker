@@ -1,9 +1,13 @@
-import store from './components/store.js'
-// import events from './helpers/events.js'
+import events from './components/events/';
+import cart from "./components/cart.js";
 
 const init = () => {
-  store.makeStore();
-//   events.breadButton();
+events.breadButtons();
+events.meatButtons();
+events.veggieButtons();
+events.condimentButtons();
+events.cheeseButtons();
+document.getElementById('checkout').addEventListener('click', cart.cartToDom);
 }
 
 init();

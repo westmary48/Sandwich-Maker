@@ -6,56 +6,118 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
-    <title>Document</title>
+    <title>Sandwich Maker</title>
 </head>
-<body>
-    <div class = "row">
-            <div id = "bread-container" class = "col-6"></div>
-            <h1>Bread</h1>
-            <input type="checkbox" id="asiago" class="btn btn-dark">Asigo</input>
-            <input type="checkbox" id="wheat" class="btn btn-dark">Wheat</input>
-            <input type="checkbox" id="white" class="btn btn-dark">White</input>
-            <input type="checkbox" id="pita" class="btn btn-dark">Pita</input>
+<div class="row">
+        <div class="col-3">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"><h3>Bread</h3>
+              <div class="input-group-text">
+                <input type="radio" aria-label="Checkbox for following text input" id="asiago" class="checkBox" name="bread">Asiago
+              </div>
+              <div class="input-group-text">
+                <input type="radio" aria-label="Checkbox for following text input" id="white" class="checkBox" name="bread">White
+              </div>
+              <div class="input-group-text">
+                <input type="radio" aria-label="Checkbox for following text input" id="wheat" class="checkBox" name="bread">Wheat
+              </div>
+              <div class="input-group-text">
+                <input type="radio" aria-label="Checkbox for following text input" id="pita" class="checkBox" name="bread">Pita
+              </div>
+            </div>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+          <div class="col-3">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend"><h3>Meat</h3>
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="turkey" class="checkBox">Turkey
+                      </div>
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="ham" class="checkBox">Ham
+                      </div>
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="chicken" class="checkBox">Chicken
+                      </div>
+                      <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input" id="tofu" class="checkBox">Tofu
+                        </div>
+                    </div>
+                    </div>
+            </div>
     </div>
 
-    <div class = "row">
-            <div id = "cheese-container" class = "col-6"></div>
-            <h1>Bread</h1>
-            <input type="checkbox" id="cheddar" class="btn btn-dark">Cheddar</input>
-            <input type="checkbox" id="gouda" class="btn btn-dark">Gouda</input>
-            <input type="checkbox" id="american" class="btn btn-dark">American</input>
-            <input type="checkbox" id="swiss" class="btn btn-dark">Swiss</input>
+    <div class="row">
+            <div class="col-3">
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend"><h3>Cheese</h3>
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="cheddar" class="checkBox">Cheddar
+                        </div>
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="gouda" class="checkBox">Gouda
+                        </div>
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="american" class="checkBox">American
+                        </div>
+                        <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input" id="swiss" class="checkBox">Swiss
+                          </div>
+                      </div>
+                      </div>
+              </div>
+      </div>
+
+      <div class="row">
+            <div class="col-3">
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend"><h3>Veggies</h3>
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="lettuce" class="checkBox">Lettuce
+                        </div>
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="onion" class="checkBox">Onion
+                        </div>
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="tomato" class="checkBox">Tomato
+                        </div>
+                        <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input" id="peppers" class="checkBox">Peppers
+                          </div>
+                      </div>
+                      </div>
+              </div>
+      </div>
+
+      <div class="row">
+            <div class="col-3">
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend"><h3>Condiments</h3>
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="mayo" class="checkBox">Mayo
+                        </div>
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="ranch" class="checkBox">Ranch
+                        </div>
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="bbq" class="checkBox">BBQ
+                        </div>
+                        <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input" id="mustard" class="checkBox">Mustard
+                          </div>
+                      </div>
+                      </div>
+              </div>
+      </div>
+
+        <button class="btn btn-primary" id="checkout">Checkout</button>
+    <div class="cart"><h2>Cart</h2>
+          <div id="cart-container" class="col-6"></div>
     </div>
 
-    <div class = "row">
-            <div id = "condiment-container" class = "col-6"></div>
-            <h1>Bread</h1>
-            <input type="checkbox" id="mayo" class="btn btn-dark">Mayo</input>
-            <input type="checkbox" id="ranch" class="btn btn-dark">Ranch</input>
-            <input type="checkbox" id="bbq" class="btn btn-dark">Bbq</input>
-            <input type="checkbox" id="mustard" class="btn btn-dark">Mustard</input>
-    </div>
-
-    <div class = "row">
-            <div id = "meats-container" class = "col-6"></div>
-            <h1>Bread</h1>
-            <input type="checkbox" id="turkey" class="btn btn-dark">Turkey</input>
-            <input type="checkbox" id="ham" class="btn btn-dark">Ham</input>
-            <input type="checkbox" id="chicken" class="btn btn-dark">Chicken</input>
-            <input type="checkbox" id="tofu" class="btn btn-dark">Tofu</input>
-    </div>
-
-    <div class = "row">
-            <div id = "veggies-container" class = "col-6"></div>
-            <h1>Bread</h1>
-            <input type="checkbox" id="lettuce" class="btn btn-dark">Lettuce</input>
-            <input type="checkbox" id="onion" class="btn btn-dark">Onion</input>
-            <input type="checkbox" id="tomato" class="btn btn-dark">Tomato</input>
-            <input type="checkbox" id="peppers" class="btn btn-dark">Peppers</input>
-    </div>
-
-    <div class = "cart" id = "cart-container"></div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script type = 'module' src="./javascripts/main.js"></script>
