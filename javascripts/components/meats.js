@@ -1,3 +1,5 @@
+import cart from './cart.js';
+
 const meatInfo = {
 
     turkey : 1.55,

@@ -1,3 +1,5 @@
+import cart from './cart.js';
+
 const cheeseInfo = {
 
     cheddar : 1.55,

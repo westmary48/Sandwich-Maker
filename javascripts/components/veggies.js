@@ -1,3 +1,5 @@
+import cart from './cart.js';
+
 const veggieInfo = {
 
     lettuce : 1.55,

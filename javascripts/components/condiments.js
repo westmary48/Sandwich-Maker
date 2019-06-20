@@ -1,3 +1,5 @@
+import cart from './cart.js';
+
 const condimentInfo = {
 
     mayo : 1.55,

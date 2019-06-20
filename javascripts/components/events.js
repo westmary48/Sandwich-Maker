@@ -1,8 +1,8 @@
-import breadInfo from './bread';
-import meatInfo from './meats';
-import cheeseInfo from './cheese';
-import veggieInfo from './veggies';
-import condimentInfo from './condiments';
+import breadInfo from './bread.js';
+import meatInfo from './meats.js';
+import cheeseInfo from './cheese.js';
+import veggieInfo from './veggies.js';
+import condimentInfo from './condiments.js';
 
 
 const addBreadIngredient = (e) => {
@@ -18,7 +18,7 @@ const addCheeseIngredient = (e) => {
 };
 
 const addVeggieIngredient = (e) => {
-  veggieInfo.addVeggie(e.target.id);
+  veggieInfo.addVeggies(e.target.id);
 };
 
 const addCondimentIngredient = (e) => {
@@ -27,9 +27,9 @@ const addCondimentIngredient = (e) => {
 
 const breadButtons = () => {
     document.getElementById('asiago').addEventListener('click', addBreadIngredient);
-    document.getElementById('wheat').addEventListener('click', store.addToCartEvent);
-    document.getElementById('white').addEventListener('click', store.addToCartEvent);
-    document.getElementById('pita').addEventListener('click', store.addToCartEvent);
+    document.getElementById('wheat').addEventListener('click', addBreadIngredient);
+    document.getElementById('white').addEventListener('click', addBreadIngredient);
+    document.getElementById('pita').addEventListener('click', addBreadIngredient);
 }
 const meatButtons = () => {
   document.getElementById('turkey').addEventListener('click', addMeatIngredient);

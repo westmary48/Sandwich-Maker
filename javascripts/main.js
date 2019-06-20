@@ -1,4 +1,4 @@
-import events from './components/events/';
+import events from './components/events.js';
 import cart from "./components/cart.js";
 
 const init = () => {
