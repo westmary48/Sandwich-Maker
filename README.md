@@ -11,12 +11,11 @@ This application allows its users to select ingredients from the menu by selecti
 - CSS
 
 ## Getting Started
-```
+[$ git clone](git@github.com:westmary48/Sandwich-Maker.git)
 
-```
 
 ## Screenshot
-![Sandwich Maker]( "Logo Title Text 1")
+![Sandwich Maker](https://raw.githubusercontent.com/westmary48/Sandwich-Maker/master/screenshots/sandwich.png "Screenshot")
 
 
 ## Prerequisites
